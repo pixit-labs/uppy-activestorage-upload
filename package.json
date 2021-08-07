@@ -1,10 +1,9 @@
 {
   "name": "@excid3/uppy-activestorage-upload",
   "description": "Rails ActiveStorage DirectUpload engine for Uppy",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "license": "MIT",
   "main": "lib/index.js",
-  "jsnext:main": "src/index.js",
   "types": "types/index.d.ts",
   "keywords": [
     "file uploader",
@@ -16,26 +15,27 @@
     "uppy",
     "uppy-plugin"
   ],
-  "homepage": "https://github.com/Sology/uppy-activestorage-upload",
-  "author": "Łukasz Jachymczyk <lukasz@sology.eu>",
+  "homepage": "https://github.com/excid3/uppy-activestorage-upload",
+  "author": "Chris Oliver <excid3@gmail.com>",
   "bugs": {
-    "url": "https://github.com/Sology/uppy-activestorage-upload/issues"
+    "url": "https://github.com/excid3/uppy-activestorage-upload/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/excid3/uppy-activestorage-upload.git"
   },
   "dependencies": {
-    "@uppy/companion-client": "0.27.2",
-    "@uppy/utils": "0.27.1",
-    "@rails/activestorage": "^6.0.0",
-    "cuid": "^2.1.1"
+    "@uppy/companion-client": "file:../companion-client",
+    "@uppy/utils": "file:../utils",
+    "cuid": "^2.1.8"
   },
   "devDependencies": {
-    "@uppy/core": "0.27.2"
+    "@rails/activestorage": "*",
+    "@uppy/core": "*"
   },
   "peerDependencies": {
-    "@uppy/core": "^0.27.0"
+    "@rails/activestorage": "*",
+    "@uppy/core": "*"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
