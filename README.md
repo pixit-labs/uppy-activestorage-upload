@@ -15,9 +15,9 @@ Then use `ActiveStorageUpload` as an Uppy plugin in your Javascript pack with We
 
 ```js
 const Uppy = require('@uppy/core')
-const ActiveStorageUpload = require('@excid3/uppy-activestorage-upload')
+const ActiveStorageUpload = require('uppy-activestorage-upload')
 
-const uppy = Uppy()
+const uppy = new Uppy()
 uppy.use(ActiveStorageUpload, {
   directUploadUrl: document.querySelector("meta[name='direct-upload-url']").getAttribute("content")
 })
@@ -26,9 +26,11 @@ uppy.use(ActiveStorageUpload, {
 ## Installation
 
 ```bash
-yarn add https://github.com/excid3/uppy-activestorage-upload
+yarn add @rails/activestorage
+yarn add https://github.com/anark/uppy-activestorage-upload
 or
-npm install https://github.com/excid3/uppy-activestorage-upload --save
+npm install @rails/activestorage
+npm install https://github.com/anark/uppy-activestorage-upload --save
 ```
 
 We recommend installing from npm and then using a module bundler such as [Webpack](http://webpack.github.io/), [Browserify](http://browserify.org/) or [Rollup.js](http://rollupjs.org/).

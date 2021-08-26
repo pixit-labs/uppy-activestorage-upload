@@ -1,39 +1,36 @@
 {
-  "name": "@excid3/uppy-activestorage-upload",
+  "name": "uppy-activestorage-upload",
   "description": "Rails ActiveStorage DirectUpload engine for Uppy",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "license": "MIT",
   "main": "lib/index.js",
   "types": "types/index.d.ts",
   "keywords": [
     "file uploader",
-    "xhr",
-    "xhr upload",
-    "XMLHttpRequest",
-    "ajax",
-    "fetch",
+    "activestorage",
     "uppy",
     "uppy-plugin"
   ],
-  "homepage": "https://github.com/excid3/uppy-activestorage-upload",
-  "author": "Chris Oliver <excid3@gmail.com>",
+  "homepage": "https://github.com/anark/uppy-activestorage-upload",
   "bugs": {
-    "url": "https://github.com/excid3/uppy-activestorage-upload/issues"
+    "url": "https://github.com/anark/uppy-activestorage-upload/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/excid3/uppy-activestorage-upload.git"
+    "url": "git+https://github.com/anark/uppy-activestorage-upload.git"
   },
   "dependencies": {
-    "cuid": "^2.1.8"
+    "@uppy/companion-client": "^2.0.0",
+    "@uppy/utils": "^4.0.0",
+    "nanoid": "^3.1.25"
   },
   "devDependencies": {
-    "@rails/activestorage": "*",
-    "@uppy/core": "*"
+    "@rails/activestorage": "^6.0.0",
+    "@uppy/core": "^2.0.0"
   },
   "peerDependencies": {
-    "@rails/activestorage": "*",
-    "@uppy/core": "*"
+    "@rails/activestorage": "^6.0.0",
+    "@uppy/core": "^2.0.0"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
